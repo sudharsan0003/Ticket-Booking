@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon 
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />-->
+    <title>Seat booking</title>
+
+    <!-- FontAwesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+
+    <!-- custom css -->
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="main-title">Book Your Ticket</h1>
+    <div class="movie-container">
+      <label for="movie">Pick a Movie:</label>
+      <select id="movie" class="movie-pick">
+        <option value="100">Movie - 1</option>
+        <option value="150">Movie - 2</option>
+        <option value="199">Movie - 3</option>
+        <option value="299">Movie - 4</option>
+      </select>
+    </div>
+    <div class="legend-container">
+      <div class="seat"></div>
+      <span class="legend">Available</span>
+
+      <div class="seat selected"></div>
+      <span class="legend">Selected</span>
+
+      <div class="seat occupied"></div>
+      <span class="legend">Sold</span>
+    </div>
+    <div class="message-container">
+      You have selected <span class="seats-count">4</span> for a price of ₹
+      <span class="total-price">600</span>
+    </div>
+    <div class="screen-container">
+      <div class="seats-container">
+        <div class="row">
+          <div class="order">A</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="order">B</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+        </div>
+
+        <div class="row">
+          <div class="order">C</div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="order">D</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="order">E</div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+
+        <div class="row">
+          <div class="order">F</div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+        </div>
+      </div>
+      <div class="notify">
+        <span>Screen this Way !</span>
+      </div>
+      <div class="blank-screen"></div>
+    </div>
+
+    <!-- custom js -->
+    <script src="./script.js"></script>
+  </body>
+</html>
